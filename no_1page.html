@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyu &#128557 &#128557 &#128557</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .paragraph2 {
+            font-size: 2rem;
+            margin: 20px 0;
+            word-wrap: break-word;
+        }
+
+        .div-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .yes_button,
+        .no_button {
+            height: 50px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .yes_button:hover,
+        .no_button:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .paragraph2 {
+                font-size: 1.5rem;
+            }
+
+            .yes_button,
+            .no_button {
+                width: 100px;
+                height: 45px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .paragraph2 {
+                font-size: 1.2rem;
+            }
+
+            .yes_button,
+            .no_button {
+                width: 90px;
+                height: 40px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/peachcat-cat.gif" alt="Sad Cat">
+        <p class="paragraph2">Phir Soch lo JAAN &#128557 &#128557 &#128557</p>
+        <div class="div-2">
+            <button class="yes_button" onclick="redirect_yes_button()">Yes</button>
+            <button class="no_button" onclick="redirect_no_button()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function redirect_yes_button() {
+            window.location.href = "yex_page.html";
+        }
+
+        function redirect_no_button() {
+            window.location.href = "no_2page.html";
+        }
+    </script>
+</body>
+
+</html>

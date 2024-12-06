@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man Jao Na &#128549;</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh; /* Ensure the body takes up full height */
+            margin: 0;
+            padding: 20px; /* Add padding to prevent content from touching screen edges */
+        }
+        .div-parent {
+            font-size: 5vw; /* Use relative font size */
+        }
+        .div-parent img {
+            max-width: 100%; /* Scale image responsively */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .div-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px; /* Reduce gap for smaller screens */
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            margin-top: 20px;
+        }
+        .yes-button,
+        .no-button {
+            height: 50px;
+            width: 120px;
+            font-size: 4vw; /* Adjust button text size for responsiveness */
+            border-radius: 5px;
+            border: none;
+        }
+        .yes-button:hover,
+        .no-button:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .yes-button,
+            .no-button {
+                width: 100px; /* Adjust width for smaller screens */
+                font-size: 3.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-parent">
+        <img src="images/lucu-cute-cat.gif" alt="Cute Cat">
+        <p>Please ek dafa yes pe click kro to sahi</p>
+        <div class="div-child">
+            <button class="yes-button" onclick="redirect_yes_button()">Yes</button>
+            <button class="no-button" onclick="redirect_no_button()">No</button>
+        </div> 
+    </div>
+    <script>
+        function redirect_yes_button() {
+            window.location.href = "yex_page.html";
+        }
+        function redirect_no_button() {
+            window.location.href = "final_no.html";
+        }
+    </script>    
+</body>
+</html>

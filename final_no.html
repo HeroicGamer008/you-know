@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ab To Han Kehna Padega</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: pink;
+            margin: 0;
+            min-height: 100vh; /* Ensure full-screen height */
+            padding: 20px; /* Prevent content from touching the edges */
+        }
+        .div-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            line-height: 1.5; /* Adjust for better readability */
+            width: 100%; /* Ensure content scales to screen width */
+            max-width: 500px; /* Limit the maximum width for readability */
+        }
+        .div-1 img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .p-1 {
+            font-size: 5vw; /* Scale text relative to the viewport width */
+        }
+        .p-2 {
+            font-size: 4vw; /* Scale secondary text for responsiveness */
+        }
+        .button {
+            margin-top: 20px; /* Add spacing above the button */
+        }
+        .yes_button {
+            height: 50px;
+            width: 120px;
+            font-size: 4vw; /* Adjust button font size for responsiveness */
+            border-radius: 5px;
+            border: none;
+            background-color: #ff6b6b;
+            color: white;
+            transition: opacity 0.3s ease;
+        }
+        .yes_button:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .yes_button {
+                width: 100px; /* Adjust button width for smaller screens */
+                font-size: 3.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1">
+        <div>
+            <img src="images/e97aab507efba22ab7bec84e2bc72ffd.gif" alt="Animated GIF">
+        </div>
+        <div class="p-1">
+            <p>Ab to Yes pe tap kr do</p>
+        </div>
+        <div class="p-2">
+            <p>(Ab to no ki option bhi ni hai)</p>
+        </div>
+        <div class="button">
+            <button class="yes_button" onclick="redirect_yes_button()"><strong>YES</strong></button>
+        </div>
+    </div>
+    <script>
+        function redirect_yes_button() {
+            window.location.href = "yex_page.html";
+        }
+    </script>
+</body>
+</html>

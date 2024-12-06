@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you love me</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .div-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .yesbutton,
+        .nobutton {
+            height: 50px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .yesbutton:hover,
+        .nobutton:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .text {
+                font-size: 1.5rem;
+            }
+
+            .yesbutton,
+            .nobutton {
+                width: 100px;
+                height: 45px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text {
+                font-size: 1.2rem;
+            }
+
+            .yesbutton,
+            .nobutton {
+                width: 90px;
+                height: 40px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-content">
+        <img src="images/mochi-poke-poke-cute-cat.gif" alt="Cute Cat">
+        <p class="text" id="para">
+            <strong>Do you love me "My JAAN!"</strong>
+            <em>Meerab</em>
+            &#128526
+        </p>
+        <div class="div-button">
+            <button class="yesbutton" onclick="redirect_yes_button()">Yes</button>
+            <button class="nobutton" onclick="redirect_no_button()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function redirect_yes_button() {
+            window.location.href = "yex_page.html";
+        }
+
+        function redirect_no_button() {
+            window.location.href = "no_1page.html";
+        }
+    </script>
+</body>
+
+</html>
